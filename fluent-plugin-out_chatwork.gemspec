@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{fluentd output plugin for post to chatwork}
+  spec.description   = %q{fluentd output plugin for post to chatwork}
+  spec.homepage      = "https://github.com/sue445/fluent-plugin-out_chatwor"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
