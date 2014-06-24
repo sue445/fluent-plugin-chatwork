@@ -4,7 +4,11 @@ module Fluent
   class ChatworkOutput < Fluent::Output
     # First, register the plugin. NAME is the name of this plugin
     # and identifies the plugin in the configuration file.
-    Fluent::Plugin.register_output('NAME', self)
+    Fluent::Plugin.register_output('chatwork', self)
+
+    config_param :api_token, :string
+    config_param :room_id  , :string
+    config_param :body     , :string
 
     # This method is called before starting.
     def configure(conf)
