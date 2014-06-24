@@ -1,4 +1,5 @@
 require "fluent/plugin/out_chatwork/version"
+require "chatwork"
 
 module Fluent
   class ChatworkOutput < Fluent::Output
@@ -36,8 +37,14 @@ module Fluent
     def emit(tag, es, chain)
       chain.next
       es.each {|time,record|
-        $stderr.puts "OK!"
+        post_message
       }
+    end
+
+    private
+    def post_message
+      ChatWork.api_key = @api_token
+      ChatWork::Message.create(room_id: @room_id, body: @body)
     end
   end
 end
