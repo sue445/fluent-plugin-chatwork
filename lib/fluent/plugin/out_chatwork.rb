@@ -1,4 +1,3 @@
-require "fluent/plugin/out_chatwork/version"
 require "chatwork"
 
 module Fluent
@@ -14,19 +13,16 @@ module Fluent
     # This method is called before starting.
     def configure(conf)
       super
-      # ...
     end
 
     # This method is called when starting.
     def start
       super
-      # ...
     end
 
     # This method is called when shutting down.
     def shutdown
       super
-      # ...
     end
 
     # This method is called when an event reaches Fluentd.

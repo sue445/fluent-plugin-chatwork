@@ -5,7 +5,7 @@ require 'fluent/plugin/out_chatwork/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-out_chatwork"
-  spec.version       = Fluent::Plugin::OutChatwork::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
