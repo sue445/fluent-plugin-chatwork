@@ -8,7 +8,7 @@ module Fluent
 
     config_param :api_token, :string
     config_param :room_id  , :string
-    config_param :body     , :string
+    config_param :message  , :string
 
     # This method is called before starting.
     def configure(conf)
@@ -40,7 +40,7 @@ module Fluent
     private
     def post_message
       ChatWork.api_key = @api_token
-      ChatWork::Message.create(room_id: @room_id, body: @body)
+      ChatWork::Message.create(room_id: @room_id, body: @message)
     end
   end
 end

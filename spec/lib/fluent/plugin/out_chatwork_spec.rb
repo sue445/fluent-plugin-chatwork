@@ -6,7 +6,7 @@ describe Fluent::ChatworkOutput do
     %[
       api_token xxxxxxxxxxxxxxxxxxxx
       room_id   1234567890
-      body      some message
+      message   some message
       ]
   end
 
@@ -19,8 +19,8 @@ describe Fluent::ChatworkOutput do
       expect( instance.room_id ).to eq "1234567890"
     end
 
-    it "should get body" do
-      expect( instance.body ).to eq "some message"
+    it "should get message" do
+      expect( instance.message ).to eq "some message"
     end
   end
 
