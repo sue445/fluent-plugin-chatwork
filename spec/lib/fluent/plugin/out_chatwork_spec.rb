@@ -36,4 +36,25 @@ describe Fluent::ChatworkOutput do
       expect(driver.run).not_to be_nil
     end
   end
+
+  describe "#post_message" do
+    let(:config) do
+      %[
+      api_token xxxxxxxxxxxxxxxxxxxx
+      room_id   1234567890
+      message   <%= record["greeting"] %> ChatWork!
+      ]
+    end
+
+    let(:record) do
+      {
+          "greeting" => "Hello"
+      }
+    end
+
+    it "should call ChatWork API with erb converted body" do
+      expect(ChatWork::Message).to receive(:create).with(room_id: "1234567890", body: "Hello ChatWork!")
+      instance.post_message(record: record)
+    end
+  end
 end

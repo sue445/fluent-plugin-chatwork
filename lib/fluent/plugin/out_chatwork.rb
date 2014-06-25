@@ -37,7 +37,6 @@ module Fluent
       }
     end
 
-    private
     def post_message(args={})
       time   = args[:time]
       record = args[:record]
