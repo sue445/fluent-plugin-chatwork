@@ -3,6 +3,7 @@
 fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 [![Gem Version](https://badge.fury.io/rb/fluent-plugin-out_chatwork.svg)](http://badge.fury.io/rb/fluent-plugin-out_chatwork)
+[![Build Status](https://travis-ci.org/sue445/fluent-plugin-out_chatwork.svg)](https://travis-ci.org/sue445/fluent-plugin-out_chatwork)
 
 ## Installation
 
