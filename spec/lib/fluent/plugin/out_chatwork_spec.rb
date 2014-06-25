@@ -27,6 +27,10 @@ describe Fluent::ChatworkOutput do
   describe "#emit" do
     let(:record){ {} }
 
+    before do
+      allow(instance).to receive(:post_message)
+    end
+
     it "should be called" do
       driver.emit(record)
       expect(driver.run).not_to be_nil
