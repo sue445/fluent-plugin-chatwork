@@ -26,7 +26,7 @@ Or install it yourself as:
   type         chatwork
   api_token    YOUR_SECRET_TOKEN
   room_id      0000000000
-  message      Hello ChatWork!
+  message      Hello ChatWork! <%= record["value"] %>
 </match>
 ```
 
@@ -36,6 +36,16 @@ Or install it yourself as:
   * send message to this room
 * message
   * message content
+  * support erb format
+  
+## Changelog
+### 0.0.2
+[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.1...v0.0.2)
+
+* Support erb at message
+
+### 0.0.1
+* Initial commit
 
 ## Contributing
 
