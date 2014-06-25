@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sue445@sue445.net"]
   spec.summary       = %q{fluentd output plugin for post to chatwork}
   spec.description   = %q{fluentd output plugin for post to chatwork}
-  spec.homepage      = "https://github.com/sue445/fluent-plugin-out_chatwor"
+  spec.homepage      = "https://github.com/sue445/fluent-plugin-out_chatwork"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
