@@ -33,14 +33,20 @@ module Fluent
     def emit(tag, es, chain)
       chain.next
       es.each {|time,record|
-        post_message
+        post_message(time: time, record: record, tag: tag)
       }
     end
 
     private
-    def post_message
+    def post_message(args={})
+      time   = args[:time]
+      record = args[:record]
+      tag    = args[:tag]
+
+      erb = ERB.new(@message)
+      body = erb.result(binding)
       ChatWork.api_key = @api_token
-      ChatWork::Message.create(room_id: @room_id, body: @message)
+      ChatWork::Message.create(room_id: @room_id, body: body)
     end
   end
 end
