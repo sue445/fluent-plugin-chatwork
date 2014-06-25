@@ -2,6 +2,8 @@
 
 fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
+[![Gem Version](https://badge.fury.io/rb/fluent-plugin-out_chatwork.svg)](http://badge.fury.io/rb/fluent-plugin-out_chatwork)
+
 ## Installation
 
 Add this line to your application's Gemfile:
