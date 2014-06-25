@@ -22,10 +22,6 @@ describe Fluent::ChatworkOutput do
     it "should get message" do
       expect( instance.message ).to eq "some message"
     end
-
-    context "When contain erb" do
-
-    end
   end
 
   describe "#emit" do
