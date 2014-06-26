@@ -6,6 +6,7 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 [![Build Status](https://travis-ci.org/sue445/fluent-plugin-out_chatwork.svg)](https://travis-ci.org/sue445/fluent-plugin-out_chatwork)
 [![Dependency Status](https://gemnasium.com/sue445/fluent-plugin-out_chatwork.svg)](https://gemnasium.com/sue445/fluent-plugin-out_chatwork)
 [![Coverage Status](https://img.shields.io/coveralls/sue445/fluent-plugin-out_chatwork.svg)](https://coveralls.io/r/sue445/fluent-plugin-out_chatwork)
+[![Code Climate](https://codeclimate.com/github/sue445/fluent-plugin-out_chatwork.png)](https://codeclimate.com/github/sue445/fluent-plugin-out_chatwork)
 
 ## Installation
 
