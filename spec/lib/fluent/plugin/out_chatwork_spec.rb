@@ -39,24 +39,41 @@ describe Fluent::ChatworkOutput do
     end
   end
 
-  describe "#post_message" do
-    let(:config) do
-      %[
-      api_token xxxxxxxxxxxxxxxxxxxx
-      room_id   1234567890
-      message   <%= record["greeting"] %> ChatWork!
-      ]
+  describe "#generate_message" do
+    subject{ instance.generate_message(record: record, time: time, tag: tag) }
+
+    let(:record){ {} }
+    let(:time)  { Time.now }
+    let(:tag)   { "debug.foo" }
+
+    context "When contain erb format" do
+      let(:config) do
+        %[
+          api_token xxxxxxxxxxxxxxxxxxxx
+          room_id   1234567890
+          message   <%= record["greeting"] %> ChatWork!
+        ]
+      end
+
+      let(:record) do
+        {
+            "greeting" => "Hello"
+        }
+      end
+
+      it{ should eq "Hello ChatWork!" }
     end
 
-    let(:record) do
-      {
-          "greeting" => "Hello"
-      }
-    end
+    context "When contain newline character" do
+      let(:config) do
+        %[
+          api_token xxxxxxxxxxxxxxxxxxxx
+          room_id   1234567890
+          message   1st line\\n2nd line
+        ]
+      end
 
-    it "should call ChatWork API with erb converted body" do
-      expect(ChatWork::Message).to receive(:create).with(room_id: "1234567890", body: "Hello ChatWork!")
-      instance.post_message(record: record)
+      it{ should eq "1st line\n2nd line" }
     end
   end
 end

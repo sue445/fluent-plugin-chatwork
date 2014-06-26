@@ -39,14 +39,17 @@ module Fluent
     end
 
     def post_message(args={})
+      body = generate_message(args)
+      ChatWork.api_key = @api_token
+      ChatWork::Message.create(room_id: @room_id, body: body)
+    end
+
+    def generate_message(args={})
       time   = args[:time]
       record = args[:record]
       tag    = args[:tag]
 
-      erb = ERB.new(@message)
-      body = erb.result(binding)
-      ChatWork.api_key = @api_token
-      ChatWork::Message.create(room_id: @room_id, body: body)
+      ERB.new(@message).result(binding).gsub("\\n", "\n")
     end
   end
 end
