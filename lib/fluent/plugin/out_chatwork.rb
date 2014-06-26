@@ -49,7 +49,7 @@ module Fluent
       record = args[:record]
       tag    = args[:tag]
 
-      ERB.new(@message).result(binding)
+      ERB.new(@message).result(binding).gsub("\\n", "\n")
     end
   end
 end

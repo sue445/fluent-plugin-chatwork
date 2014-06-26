@@ -63,5 +63,17 @@ describe Fluent::ChatworkOutput do
 
       it{ should eq "Hello ChatWork!" }
     end
+
+    context "When contain newline character" do
+      let(:config) do
+        %[
+          api_token xxxxxxxxxxxxxxxxxxxx
+          room_id   1234567890
+          message   1st line\\n2nd line
+        ]
+      end
+
+      it{ should eq "1st line\n2nd line" }
+    end
   end
 end
