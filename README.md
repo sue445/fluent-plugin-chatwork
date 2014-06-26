@@ -27,7 +27,7 @@ Or install it yourself as:
   type         chatwork
   api_token    YOUR_SECRET_TOKEN
   room_id      0000000000
-  message      Hello ChatWork! <%= record["value"] %>
+  message      Hello ChatWork!\n<%= record["value"] %>
 </match>
 ```
 
@@ -38,15 +38,18 @@ Or install it yourself as:
 * message
   * message content
   * support erb format
+  * support newline character (\n)
   
 ## Changelog
 ### master
 [full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.2...master)
 
+* Support newline character in message
+
 ### 0.0.2
 [full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.1...v0.0.2)
 
-* Support erb at message
+* Support erb in message
 
 ### 0.0.1
 * Initial commit
