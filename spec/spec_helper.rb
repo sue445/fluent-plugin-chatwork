@@ -19,6 +19,9 @@
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'fluent/load'
 require 'fluent/test'
 
