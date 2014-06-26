@@ -16,6 +16,8 @@
 # users commonly want.
 #
 
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 require 'fluent/load'
 require 'fluent/test'
