@@ -10,15 +10,6 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'fluent-plugin-out_chatwork'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install fluent-plugin-out_chatwork
 
