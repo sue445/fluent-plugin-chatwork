@@ -48,7 +48,7 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 * Support erb in message
 
 ### 0.0.1
-* Initial commit
+* first release
 
 ## Contributing
 
