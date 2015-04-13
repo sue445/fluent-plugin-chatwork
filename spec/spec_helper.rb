@@ -16,11 +16,17 @@
 # users commonly want.
 #
 
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
+if ENV["CI"]
+  require 'simplecov'
+  require 'coveralls'
+  require 'codeclimate-test-reporter'
 
-require 'coveralls'
-Coveralls.wear!
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    CodeClimate::TestReporter::Formatter,
+    Coveralls::SimpleCov::Formatter
+  ]
+  SimpleCov.start
+end
 
 require 'fluent/load'
 require 'fluent/test'
