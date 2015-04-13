@@ -1,6 +1,10 @@
 # -*- encoding: utf-8 -*-
 
 describe Fluent::ChatworkOutput do
+  before do
+    Fluent::Test.setup
+  end
+
   let(:driver)   { Fluent::Test::OutputTestDriver.new(Fluent::ChatworkOutput, 'test.metrics').configure(config) }
   let(:instance) { driver.instance }
 
