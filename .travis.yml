@@ -5,7 +5,10 @@ rvm:
   - 2.1.2
 cache: bundler
 bundler_args: --jobs=2
-script: CODECLIMATE_REPO_TOKEN=93805166d8380e3602f18bd68762cb0222f0d68fca3f1771f22188a5a0995485 bundle exec rspec
+before_script:
+- export CODECLIMATE_REPO_TOKEN=93805166d8380e3602f18bd68762cb0222f0d68fca3f1771f22188a5a0995485
+- export COVERAGE=true
+script: bundle exec rspec
 branches:
   only:
     - master
