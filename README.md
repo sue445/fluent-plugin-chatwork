@@ -18,7 +18,7 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 ```
 <match **>
-  type         chatwork
+  @type        chatwork
   api_token    YOUR_SECRET_TOKEN
   room_id      0000000000
   message      Hello ChatWork!\n<%= record["value"] %>
