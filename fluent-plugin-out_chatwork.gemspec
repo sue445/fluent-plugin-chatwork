@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-out_chatwork"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.99.0.beta1"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
   # TODO: Tweak after
