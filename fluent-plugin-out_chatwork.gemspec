@@ -26,4 +26,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "test-unit"
+
+  spec.post_install_message = <<-EOS
+===========================================================================
+[DEPRECATION WARNING] fluent-plugin-out_chatwork is deprecated.
+Please install fluent-plugin-chatwork instead of fluent-plugin-out_chatwork
+===========================================================================
+  EOS
 end
