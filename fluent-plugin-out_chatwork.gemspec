@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.3"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
+  # TODO: Tweak after
   spec.summary       = %q{fluentd output plugin for post to chatwork}
   spec.description   = %q{fluentd output plugin for post to chatwork}
   spec.homepage      = "https://github.com/sue445/fluent-plugin-out_chatwork"
@@ -17,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "fluent-plugin-chatwork"
+  # TODO: Remove version
+  spec.add_dependency "fluent-plugin-chatwork", "1.0.0.beta1"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
