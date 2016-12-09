@@ -2,7 +2,7 @@
 
 fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
-[![Gem Version](https://badge.fury.io/rb/fluent-plugin-out_chatwork.svg)](http://badge.fury.io/rb/fluent-plugin-out_chatwork)
+[![Gem Version](https://badge.fury.io/rb/fluent-plugin-chatwork.svg)](http://badge.fury.io/rb/fluent-plugin-chatwork)
 [![Build Status](https://travis-ci.org/sue445/fluent-plugin-out_chatwork.svg)](https://travis-ci.org/sue445/fluent-plugin-out_chatwork)
 [![Dependency Status](https://gemnasium.com/sue445/fluent-plugin-out_chatwork.svg)](https://gemnasium.com/sue445/fluent-plugin-out_chatwork)
 [![Coverage Status](https://img.shields.io/coveralls/sue445/fluent-plugin-out_chatwork.svg)](https://coveralls.io/r/sue445/fluent-plugin-out_chatwork)
