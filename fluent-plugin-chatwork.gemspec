@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-chatwork"
-  spec.version       = "1.0.0.beta1"
+  spec.version       = "1.0.0"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
   spec.summary       = %q{fluentd output plugin for post to chatwork}
