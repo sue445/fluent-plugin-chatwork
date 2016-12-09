@@ -1,4 +1,4 @@
-# fluent-plugin-out_chatwork
+# fluent-plugin-chatwork
 
 fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
@@ -12,7 +12,7 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 ## Installation
 
 
-    $ gem install fluent-plugin-out_chatwork
+    $ gem install fluent-plugin-chatwork
 
 ## Configure
 
