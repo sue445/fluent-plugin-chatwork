@@ -17,8 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "fluentd"
-  spec.add_dependency "chatwork"
+  spec.add_dependency "fluent-plugin-chatwork"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
