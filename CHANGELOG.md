@@ -1,6 +1,12 @@
 # Changelog
 ## master
-[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v1.0.0...master)
+[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v1.0.1...master)
+
+## 1.0.1
+[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v1.0.0...v1.0.1)
+
+* Use ChatWork API v2
+  * https://github.com/sue445/fluent-plugin-out_chatwork/pull/9
 
 ## 1.0.0
 [full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.3...v1.0.0)
