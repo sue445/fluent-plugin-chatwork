@@ -1,15 +1,15 @@
 # Changelog
 ## master
-[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v1.0.1...master)
+[full changelog](http://github.com/sue445/fluent-plugin-chatwork/compare/v1.0.1...master)
 
 ## 1.0.1
-[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v1.0.0...v1.0.1)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v1.0.0...v1.0.1)
 
 * Use ChatWork API v2
-  * https://github.com/sue445/fluent-plugin-out_chatwork/pull/9
+  * https://github.com/sue445/fluent-plugin-chatwork/pull/9
 
 ## 1.0.0
-[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.3...v1.0.0)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v0.0.3...v1.0.0)
 
 ### Breaking Changes :bomb:
 * **Rename gem: fluent-plugin-out_chatwork -> fluent-plugin-chatwork**
@@ -20,12 +20,12 @@
 * Print deprecation warning after install
 
 ## 0.0.3
-[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.2...v0.0.3)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v0.0.2...v0.0.3)
 
 * Support newline character in message
 
 ## 0.0.2
-[full changelog](http://github.com/sue445/fluent-plugin-out_chatwork/compare/v0.0.1...v0.0.2)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v0.0.1...v0.0.2)
 
 * Support erb in message
 
