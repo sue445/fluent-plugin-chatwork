@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 
-describe Fluent::ChatworkOutput do
+describe Fluent::Plugin::ChatworkOutput do
   before do
     Fluent::Test.setup
   end
 
-  let(:driver)   { Fluent::Test::OutputTestDriver.new(Fluent::ChatworkOutput, 'test.metrics').configure(config) }
+  let(:driver)   { Fluent::Test::Driver::Output.new(Fluent::Plugin::ChatworkOutput).configure(config) }
   let(:instance) { driver.instance }
 
   let(:config) do
@@ -28,6 +28,10 @@ describe Fluent::ChatworkOutput do
     it "should get message" do
       expect( instance.message ).to eq "some message"
     end
+
+    it "should get buffered" do
+      expect( instance.buffered ).to be_falsy
+    end
   end
 
   describe "#emit" do
@@ -38,8 +42,30 @@ describe Fluent::ChatworkOutput do
     end
 
     it "should be called" do
-      driver.emit(record)
-      expect(driver.run).not_to be_nil
+      driver.run(default_tag: "test.metrics") { driver.feed(record) }
+      expect(driver.events).not_to be_nil
+    end
+  end
+
+  describe "buffered #emit" do
+    let(:record){ {} }
+
+    let(:config) do
+      %[
+       api_token xxxxxxxxxxxxxxxxxxxx
+       room_id   1234567890
+       message   some message
+       buffered  true
+       ]
+    end
+
+    before do
+      allow(instance).to receive(:post_message)
+    end
+
+    it "should be called" do
+      driver.run(default_tag: "test.metrics") { driver.feed(record) }
+      expect(driver.events).not_to be_nil
     end
   end
 

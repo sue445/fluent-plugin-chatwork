@@ -26,6 +26,7 @@ end
 
 require 'fluent/load'
 require 'fluent/test'
+require 'fluent/test/driver/output'
 
 require 'fluent/plugin/out_chatwork'
 

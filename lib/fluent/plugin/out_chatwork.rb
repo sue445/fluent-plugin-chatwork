@@ -1,15 +1,27 @@
 # -*- encoding: utf-8 -*-
 require "chatwork"
+require "fluent/plugin/output"
 
-module Fluent
-  class ChatworkOutput < Fluent::Output
+module Fluent::Plugin
+  class ChatworkOutput < Output
     # First, register the plugin. NAME is the name of this plugin
     # and identifies the plugin in the configuration file.
     Fluent::Plugin.register_output('chatwork', self)
 
+    helpers :compat_parameters
+
+    DEFAULT_BUFFER_TYPE = "memory"
+
     config_param :api_token, :string
     config_param :room_id  , :string
     config_param :message  , :string
+    # Switch non-buffered/buffered plugin
+    config_param :buffered, :bool, default: false
+
+    config_section :buffer do
+      config_set_default :@type, DEFAULT_BUFFER_TYPE
+      config_set_default :chunk_keys, ['tag']
+    end
 
     # This method is called before starting.
     def configure(conf)
@@ -26,14 +38,32 @@ module Fluent
       super
     end
 
+    def prefer_buffered_processing
+      @buffered
+    end
+
+    def formatted_to_msgpack_binary?
+      true
+    end
+
+    def format(tag, time, record)
+      [time, record].to_msgpack
+    end
+
     # This method is called when an event reaches Fluentd.
     # 'es' is a Fluent::EventStream object that includes multiple events.
     # You can use 'es.each {|time,record| ... }' to retrieve events.
     # 'chain' is an object that manages transactions. Call 'chain.next' at
     # appropriate points and rollback if it raises an exception.
-    def emit(tag, es, chain)
-      chain.next
+    def process(tag, es)
       es.each {|time,record|
+        post_message(time: time, record: record, tag: tag)
+      }
+    end
+
+    def write(chunk)
+      tag = chunk.metadata.tag
+      chunk.msgpack_each {|time, record|
         post_message(time: time, record: record, tag: tag)
       }
     end
