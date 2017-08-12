@@ -36,7 +36,7 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
   
 ## Contributing
 
-1. Fork it ( https://github.com/sue445/fluent-plugin-out_chatwork/fork )
+1. Fork it ( https://github.com/sue445/fluent-plugin-chatwork/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
