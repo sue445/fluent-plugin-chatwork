@@ -8,7 +8,7 @@ rvm:
 cache: bundler
 bundler_args: --jobs=2
 before_script:
-- export CODECLIMATE_REPO_TOKEN=93805166d8380e3602f18bd68762cb0222f0d68fca3f1771f22188a5a0995485
+- export CODECLIMATE_REPO_TOKEN=586f55fe847c8d296adc6a00e2adf651cd63f4ea3c6ae79e7d723ad2c1f86ffc
 - export COVERAGE=true
 script:
 - bundle exec rspec
