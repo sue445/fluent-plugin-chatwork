@@ -3,11 +3,11 @@
 fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 [![Gem Version](https://badge.fury.io/rb/fluent-plugin-chatwork.svg)](http://badge.fury.io/rb/fluent-plugin-chatwork)
-[![Build Status](https://travis-ci.org/sue445/fluent-plugin-out_chatwork.svg)](https://travis-ci.org/sue445/fluent-plugin-out_chatwork)
-[![Dependency Status](https://gemnasium.com/sue445/fluent-plugin-out_chatwork.svg)](https://gemnasium.com/sue445/fluent-plugin-out_chatwork)
-[![Coverage Status](https://img.shields.io/coveralls/sue445/fluent-plugin-out_chatwork.svg)](https://coveralls.io/r/sue445/fluent-plugin-out_chatwork)
-[![Code Climate](https://codeclimate.com/github/sue445/fluent-plugin-out_chatwork.png)](https://codeclimate.com/github/sue445/fluent-plugin-out_chatwork)
-[![Inline docs](http://inch-ci.org/github/sue445/fluent-plugin-out_chatwork.png?branch=master)](http://inch-ci.org/github/sue445/fluent-plugin-out_chatwork)
+[![Build Status](https://travis-ci.org/sue445/fluent-plugin-chatwork.svg?branch=master)](https://travis-ci.org/sue445/fluent-plugin-chatwork)
+[![Dependency Status](https://gemnasium.com/sue445/fluent-plugin-chatwork.svg)](https://gemnasium.com/sue445/fluent-plugin-chatwork)
+[![Coverage Status](https://coveralls.io/repos/github/sue445/fluent-plugin-chatwork/badge.svg?branch=master)](https://coveralls.io/github/sue445/fluent-plugin-chatwork?branch=master)
+[![Code Climate](https://codeclimate.com/github/sue445/fluent-plugin-chatwork.png)](https://codeclimate.com/github/sue445/fluent-plugin-chatwork)
+[![Inline docs](http://inch-ci.org/github/sue445/fluent-plugin-chatwork.svg?branch=master)](http://inch-ci.org/github/sue445/fluent-plugin-chatwork)
 
 ## Installation
 
