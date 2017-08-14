@@ -12,10 +12,16 @@ module Fluent::Plugin
 
     DEFAULT_BUFFER_TYPE = "memory"
 
+    desc "Secret API Token"
     config_param :api_token, :string
+
+    desc "Send message to this room."
     config_param :room_id  , :string
+
+    desc "Message content. Supported erb format and newline character."
     config_param :message  , :string
-    # Switch non-buffered/buffered plugin
+
+    desc "Switch non-buffered/buffered plugin"
     config_param :buffered, :bool, default: false
 
     config_section :buffer do
