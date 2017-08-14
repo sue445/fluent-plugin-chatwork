@@ -1,6 +1,12 @@
 # Changelog
 ## master
-[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.0...master)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.1...master)
+
+## 2.0.1
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.0...v2.0.1)
+
+* Add desc for more usability
+  * https://github.com/sue445/fluent-plugin-chatwork/pull/14
 
 ## 2.0.0
 [full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v1.0.1...v2.0.0)
