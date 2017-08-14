@@ -14,10 +14,13 @@ module Fluent::Plugin
 
     desc "Secret API Token"
     config_param :api_token, :string
+
     desc "Send message to this room."
     config_param :room_id  , :string
+
     desc "Message content. Supported erb format and newline character."
     config_param :message  , :string
+
     desc "Switch non-buffered/buffered plugin"
     config_param :buffered, :bool, default: false
 
