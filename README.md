@@ -9,6 +9,13 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 [![Code Climate](https://codeclimate.com/github/sue445/fluent-plugin-chatwork.png)](https://codeclimate.com/github/sue445/fluent-plugin-chatwork)
 [![Inline docs](http://inch-ci.org/github/sue445/fluent-plugin-chatwork.svg?branch=master)](http://inch-ci.org/github/sue445/fluent-plugin-chatwork)
 
+## Requirements
+
+| fluent-plugin-chatwork | fluentd | ruby |
+|------------------------|---------|------|
+| >= 2.0.0 | >= v0.14.0 | >= 2.1 |
+|  < 2.0.0 | >= v0.12.0 | >= 1.9 |
+
 ## Installation
 
 
@@ -16,12 +23,29 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 ## Configure
 
+### For non-buffered
+
 ```
 <match **>
   @type        chatwork
   api_token    YOUR_SECRET_TOKEN
   room_id      0000000000
   message      Hello ChatWork!\n<%= record["value"] %>
+</match>
+```
+
+### For buffered
+
+```
+<match **>
+  @type        chatwork
+  api_token    YOUR_SECRET_TOKEN
+  room_id      0000000000
+  message      Hello ChatWork!\n<%= record["value"] %>
+  buffered     true
+  <buffer>
+    @type memory
+  </buffer>
 </match>
 ```
 
@@ -33,7 +57,9 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
   * message content
   * support erb format
   * support newline character (\n)
-  
+* buffered
+  * Switch non-buffered/buffered output
+
 ## Contributing
 
 1. Fork it ( https://github.com/sue445/fluent-plugin-chatwork/fork )
