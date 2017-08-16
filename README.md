@@ -57,7 +57,9 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
   * message content
   * support erb format
   * support newline character (\n)
-  
+* buffered
+  * Switch non-buffered/buffered output
+
 ## Contributing
 
 1. Fork it ( https://github.com/sue445/fluent-plugin-chatwork/fork )
