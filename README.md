@@ -23,12 +23,29 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 ## Configure
 
+### For non-buffered
+
 ```
 <match **>
   @type        chatwork
   api_token    YOUR_SECRET_TOKEN
   room_id      0000000000
   message      Hello ChatWork!\n<%= record["value"] %>
+</match>
+```
+
+### For buffered
+
+```
+<match **>
+  @type        chatwork
+  api_token    YOUR_SECRET_TOKEN
+  room_id      0000000000
+  message      Hello ChatWork!\n<%= record["value"] %>
+  buffered     true
+  <buffer>
+    @type memory
+  </buffer>
 </match>
 ```
 
