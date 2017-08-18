@@ -34,6 +34,25 @@ describe Fluent::Plugin::ChatworkOutput do
     end
   end
 
+  describe "lack of tag in chunk_keys" do
+    let(:config) do
+      Fluent::Config::Element.new(
+        'ROOT', '', {
+          '@type' => 'charwork',
+          'api_token' => 'xxxxxxxxxxxxxxxxxxxx',
+          'room_id' => 1234567890,
+          'message' => 'some message',
+        }, [
+          Fluent::Config::Element.new('buffer', 'mykey', {
+                                        'chunk_keys' => 'mykey'
+                                      }, [])
+        ])
+    end
+    it "raises Fluent::ConfigError" do
+      expect { driver }.to raise_error(/'tag' in chunk_keys is required./)
+    end
+  end
+
   describe "#emit" do
     let(:record){ {} }
 

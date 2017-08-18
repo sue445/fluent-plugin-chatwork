@@ -43,7 +43,7 @@ fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
   room_id      0000000000
   message      Hello ChatWork!\n<%= record["value"] %>
   buffered     true
-  <buffer>
+  <buffer tag>
     @type memory
   </buffer>
 </match>

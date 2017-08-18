@@ -31,7 +31,10 @@ module Fluent::Plugin
 
     # This method is called before starting.
     def configure(conf)
+      compat_parameters_convert(conf, :buffer)
       super
+
+      raise Fluent::ConfigError, "'tag' in chunk_keys is required." unless @chunk_key_tag
     end
 
     # This method is called when starting.
