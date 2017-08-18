@@ -1,6 +1,12 @@
 # Changelog
 ## master
-[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.1...master)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.2...master)
+
+## 2.0.2
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.1...v2.0.2)
+
+* Verify tag existence in chunk keys
+  * https://github.com/sue445/fluent-plugin-chatwork/pull/16
 
 ## 2.0.1
 [full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.0...v2.0.1)
