@@ -21,7 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "chatwork", ">= 0.4.0"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
