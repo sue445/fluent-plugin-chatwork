@@ -1,6 +1,12 @@
 # Changelog
 ## master
-[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.2...master)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.3...master)
+
+## 2.0.3
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.2...v2.0.3)
+
+* Enable MFA requirement for gem releasing
+  * https://github.com/sue445/fluent-plugin-chatwork/pull/34
 
 ## 2.0.2
 [full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.1...v2.0.2)
