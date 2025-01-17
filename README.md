@@ -3,7 +3,7 @@
 fluentd output plugin for post to [ChatWork](http://www.chatwork.com/)
 
 [![Gem Version](https://badge.fury.io/rb/fluent-plugin-chatwork.svg)](http://badge.fury.io/rb/fluent-plugin-chatwork)
-[![Build Status](https://github.com/sue445/fluent-plugin-chatwork/workflows/test/badge.svg?branch=master)](https://github.com/sue445/fluent-plugin-chatwork/actions?query=workflow%3Atest)
+[![test](https://github.com/sue445/fluent-plugin-chatwork/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/fluent-plugin-chatwork/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/sue445/fluent-plugin-chatwork/badge.svg?branch=master)](https://coveralls.io/github/sue445/fluent-plugin-chatwork?branch=master)
 [![Code Climate](https://codeclimate.com/github/sue445/fluent-plugin-chatwork.png)](https://codeclimate.com/github/sue445/fluent-plugin-chatwork)
 [![Inline docs](http://inch-ci.org/github/sue445/fluent-plugin-chatwork.svg?branch=master)](http://inch-ci.org/github/sue445/fluent-plugin-chatwork)
