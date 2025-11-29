@@ -1,6 +1,12 @@
 # Changelog
 ## master
-[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.3...master)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.4...master)
+
+## [2.0.4](https://github.com/sue445/fluent-plugin-chatwork/releases/tag/v2.0.4)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.3...v2.0.4)
+
+* Release gem from GitHub Actions
+  * https://github.com/sue445/fluent-plugin-chatwork/pull/68
 
 ## 2.0.3
 [full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.2...v2.0.3)
