@@ -1,6 +1,12 @@
 # Changelog
 ## master
-[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.4...master)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.5...master)
+
+## [2.0.5](https://github.com/sue445/fluent-plugin-chatwork/releases/tag/v2.0.5)
+[full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.4...v2.0.5)
+
+* Migrate release_gem workflow to sue445/workflows (Also testing the gem release)
+  * https://github.com/sue445/fluent-plugin-chatwork/pull/108
 
 ## [2.0.4](https://github.com/sue445/fluent-plugin-chatwork/releases/tag/v2.0.4)
 [full changelog](https://github.com/sue445/fluent-plugin-chatwork/compare/v2.0.3...v2.0.4)
